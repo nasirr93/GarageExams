@@ -31,8 +31,14 @@ namespace GarageExams
                 DateTime endDate = DateTime.ParseExact(Console.ReadLine(), "HH:mm", null);
 
 
-                Student student = new Student { NameSurname = studentName};
-                Subject subject = new Subject { SubjectName = subjectName };
+                Student student = new Student 
+                { 
+                    NameSurname = studentName
+                };
+                Subject subject = new Subject
+                { 
+                    SubjectName = subjectName
+                };
                 Exam exam = new Exam
                 {
                     Student = student,
